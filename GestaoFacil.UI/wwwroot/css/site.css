@@ -1,0 +1,21 @@
+﻿.form-group-ed {
+    margin-bottom: 50px !important;
+}
+
+
+.ed {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    /* margin-left: auto;*/
+
+}
+
+.celular {
+    width: 150px !important;
+}
+
+
+.escodeID {
+    display: none !important;
+}

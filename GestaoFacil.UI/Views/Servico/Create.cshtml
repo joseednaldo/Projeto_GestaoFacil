@@ -1,0 +1,51 @@
+﻿@model GestaoFacil.Models.ServicoData
+
+
+
+<link rel="stylesheet" href="~/css/site.css">
+
+<div class="box box-primary">
+
+    <div class="box-header with-border">
+        <h3 class="box-title">Cadastro de serviço</h3>
+    </div>
+
+    <!-- /.box-header -->
+    <!-- form start -->
+    <form asp-action="Create">
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <label asp-for="Descricao" class="control-label"></label>
+                <input asp-for="Descricao" class="form-control" />
+                <span asp-validation-for="Descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-3">
+                <label class="control-label">Preço</label>
+                <input asp-for="preco" class="form-control" />
+                <span asp-validation-for="preco" class="text-danger"></span>
+            </div>
+            @*<div class="form-check col-md-5">
+                <input type="checkbox" class="form-check-input" id="ckbAtivo">
+                <label class="form-check-label" for="exampleCheck1">Ativo</label>
+            </div>*@
+        </div>
+
+        <div class="form-row">
+            <div class="form-check col-md-12">
+                <input type="checkbox" class="form-check-input" id="ckbAtivo">
+                <label class="form-check-label" for="exampleCheck1">Ativo</label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class=" offset-6 col-md-6" style="text-align: left;">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+
+        <div class="container justify-content-lg-start" style="padding-bottom: 10px;"></div>
+
+    </form>
+</div>
